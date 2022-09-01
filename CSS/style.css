@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.container {
+  width: 1030px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  background-color: #fff;
+}
+.container > .navbar {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.container > .navbar > .aside-nav {
+  height: 50px;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  position: relative;
+}
+.container > .navbar > .aside-nav > img {
+  object-fit: contain;
+  position: relative;
+  height: 20px;
+  cursor: pointer;
+}
+.container > .navbar > .logo {
+  height: 50px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.container > .navbar > .logo > h6 {
+  font-size: 19px;
+  color: rgb(236, 1, 120);
+  font-family: 'cursive';
+  font-weight: 600;
+}
+.container > .navbar > .extras {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 50px;
+  width: 20%;
+}
+.container > .navbar > .extras > .search,
+.container > .navbar > .extras > .cart {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  width: 49%;
+}
+.container > .navbar > .extras > .search > img,
+.container > .navbar > .extras > .cart > img {
+  object-fit: contain;
+  position: relative;
+  height: 18px;
+  cursor: pointer;
+}
+.container > main {
+  height: 250px;
+  width: 1030px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.container > main > .overflow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container > main > .overflow > .container {
+  width: 1000px!important;
+  height: 240px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  transition: .2s ease-in-out;
+  animation-name: kindamenu;
+  animation-duration: 30s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.container > main > .overflow > .container > .slides {
+  width: 300px!important;
+  height: 230px;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container > main > .overflow > .container > .slides:hover .view {
+  visibility: visible;
+  transition: all .5s ease;
+}
+.container > main > .overflow > .container > .slides:hover .tt {
+  display: none;
+}
+.container > main > .overflow > .container > .slides > .view {
+  height: 230px;
+  border-radius: 20px;
+  display: flex;
+  visibility: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.container > main > .overflow > .container > .slides > .view > img {
+  height: 35px;
+  object-fit: contain;
+  position: relative;
+  filter: brightness(60%);
+}
+.container > main > .overflow > .container > .menu1 {
+  background-image: url(../IMAGES/joyful-vT5xrj3z1OE-unsplash.jpg);
+}
+.container > main > .overflow > .container > .menu2 {
+  background-image: url(../IMAGES/faisal-khalid-1bLxgAZ2P7w-unsplash.jpg);
+}
+.container > main > .overflow > .container > .menu3 {
+  background-image: url(../IMAGES/streets-of-food-Ud7X_noGg4o-unsplash.jpg);
+}
+.container > main > .overflow > .container > .menu4 {
+  background-image: url(../IMAGES/fariz-albar-TCX85XVECBc-unsplash.jpg);
+}
+.container > main > .overflow > .container > .menu5 {
+  background-image: url(../IMAGES/nathan-dumlao-zUNs99PGDg0-unsplash.jpg);
+}
+@keyframes kindamenu {
+  0% {
+    margin-right: 0;
+    position: absolute;
+  }
+  5% {
+    margin-right: 0%;
+    position: absolute;
+  }
+  10% {
+    margin-right: 0%;
+    position: absolute;
+  }
+  15% {
+    position: absolute;
+    margin-right: 15%;
+  }
+  25% {
+    position: absolute;
+    margin-right: 15%;
+  }
+  35% {
+    margin-right: 55%;
+    position: absolute;
+  }
+  45% {
+    margin-right: 55%;
+    position: absolute;
+  }
+  55% {
+    margin-right: 95%;
+    position: absolute;
+  }
+  65% {
+    margin-right: 95%;
+    position: absolute;
+  }
+  75% {
+    margin-right: 110%;
+    position: absolute;
+  }
+  85% {
+    margin-right: 110%;
+    position: absolute;
+  }
+  95% {
+    margin-right: -5%;
+    position: absolute;
+  }
+  100% {
+    margin-right: -5%;
+    position: absolute;
+  }
+}
+.container > main > .overflow > .container > .slides > .tt {
+  bottom: 0%;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s ease;
+  background-color: rgba(0, 0, 0, 0.65);
+  position: absolute;
+}
+.container > main > .overflow > .container > .slides > .view > p ,
+.container > main > .overflow > .container > .slides > .tt > p {
+  color: rgb(236, 1, 120);
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
